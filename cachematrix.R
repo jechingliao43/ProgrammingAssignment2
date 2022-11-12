@@ -29,8 +29,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## inv turns out to not be NULL, it print the inverse matrix directly out of 
 ## cache memory. If it is not the case, it calls get sub-function to retrieve
 ## the new matrix, use solve() to compute the inverse and put it back to inv
-## and calls setinv to store the data back to makeCacheMatrix. Finally, it print
-## the inverse matrix.
+## and calls setinv to store the data back to makeCacheMatrix. Finally, it prints
+## the inverse matrix out.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
